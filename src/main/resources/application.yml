@@ -1,0 +1,24 @@
+server:
+  port: 8099
+
+spring:
+  mail:
+    host: smtp.qq.com
+    post: 465
+    username: 836524969@qq.com
+    password: uhqkynaoycoybcif
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+
+mail:
+  subject: WARNING
+  #当前邮箱
+  from: 836524969@qq.com
+  #目标邮箱
+  to: 836524969@qq.com
+
+app:
+  urls: http://192.168.5.182:8088/agent
