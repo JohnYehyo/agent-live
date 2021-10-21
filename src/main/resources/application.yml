@@ -22,3 +22,6 @@ mail:
 
 app:
   urls: http://192.168.5.182:8088/agent
+
+JohnYehyo:
+  version: 1.0.0

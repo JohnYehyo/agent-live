@@ -43,6 +43,7 @@ public class Agent {
         }
         if (null == s) {
             email.send("服务:" + url + " " + ResponseEnum.CONNECTION_EXCEPTION.getValue());
+            return;
         }
         ResponseVo responseVo = JSONUtil.toBean(s, ResponseVo.class);
         if (responseVo.getCode().intValue() != ResponseEnum.SUCCESS.getCode().intValue()) {
